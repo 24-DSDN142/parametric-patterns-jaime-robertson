@@ -12,6 +12,8 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.grid_settings.cell_width  = 100;
   pWallpaper.grid_settings.cell_height = 100;
   pWallpaper.grid_settings.row_offset  = 50;
+
+  angleMode(degrees);
 }
 
 function wallpaper_background() {
@@ -24,11 +26,11 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   noStroke();
 
   fill(196, 159, 207); //light purple 
-  ellipse(50,32,50,10);
+  ellipse(50,30,50,10);
   triangle(40,40,50,0,60,40)
 
   fill(133, 109, 140); //darker purple
-  ellipse(50,32,50,5)
+  ellipse(50,29,50,3)
 
   fill(123, 201, 144); //green
   ellipse(50,45,30,25);
@@ -37,6 +39,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   ellipse(40,35,10,10)
   ellipse(60,35,10,10)
 
+  
 
   
 }
