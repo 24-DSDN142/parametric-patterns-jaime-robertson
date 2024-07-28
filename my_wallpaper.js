@@ -4,8 +4,14 @@
 
 let eyeSize = 7
 
+let headWidth = 50
+
+let eyeDistance = 80
+
 let rectX = 0
 let rectY = 0
+
+
 
 
 function setup_wallpaper(pWallpaper) {
@@ -31,28 +37,35 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   
   strokeWeight(0.2);
 
+  // wizard hat 
   fill(196, 159, 207); //light purple 
   ellipse(100,80,100,13);
   triangle(80,80,100,30,120,80)
 
   fill(133, 109, 140); //darker purple
-  ellipse(100,79,98,4)
+  ellipse(100,79,98,4) // darker hat stripe
 
+  // frog body
   strokeWeight(0.2);
   
   fill(123, 201, 144); //green
-  rect(85,105,30,50);
-  ellipse(80,80,14,14);
-  ellipse(120,80,14,14);
 
-  ellipse(100,95,50,30);
+  rect(77,107,20,45,90,90); // left arm
+  rect(103,107,20,45,90,90); // right arm
 
-  rect(75,155,10,30)
-  rect(115,155,10,30)
+  rect(85,105,30,50); // rect body
+
+  ellipse(eyeDistance,80,14,14); // left eye base
+  ellipse(eyeDistance+40,80,14,14); // right eye base
+
+  ellipse(100,95,headWidth,30); //head
+
+  rect(85,155,10,30) // left leg
+  rect(105,155,10,30) // right leg
   
   fill(0); //black
-  ellipse(80,77,eyeSize,eyeSize);
-  ellipse(120,77,eyeSize,eyeSize);
+  ellipse(80,79,eyeSize,eyeSize); // left eye
+  ellipse(120,79,eyeSize,eyeSize); // right eye
 
 
 // checkered border
@@ -97,10 +110,5 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   rect(rectX+180,rectY+140,20,20);
   rect(rectX+180,rectY+180,20,20);
 
-  fill(123, 201, 144); //green
-  //rect(rectX+40,rectY+200);
-
-  fill(0); //black
-  //rect(rectX+20,rectY+200);  
   
 }
