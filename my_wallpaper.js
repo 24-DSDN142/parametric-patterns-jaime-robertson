@@ -11,11 +11,14 @@ let eyeDistance = 80
 let rectX = 0
 let rectY = 0
 
+let checkX = 20
+let checkY = 20
 
+let legLength = 18
 
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(true); //set this to false when you're ready to print
 
@@ -60,8 +63,8 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
   ellipse(100,95,headWidth,30); //head
 
-  rect(85,155,10,30); // left leg
-  rect(105,155,10,30); // right leg
+  rect(85,155,10,legLength); // left leg
+  rect(105,155,10,legLength); // right leg
   
   fill(0); //black
   ellipse(80,79,eyeSize,eyeSize); // left eye
@@ -82,57 +85,57 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
 // checkered border
   fill(0); //black
-  rect(rectX,rectY,20,20);
-  rect(rectX,rectY+40,20,20);
-  rect(rectX,rectY+80,20,20);
-  rect(rectX,rectY+120,20,20);
-  rect(rectX,rectY+160,20,20);
+  rect(rectX,rectY,checkX,checkY);
+  rect(rectX,rectY+40,checkX,checkY);
+  rect(rectX,rectY+80,checkX,checkY);
+  rect(rectX,rectY+120,checkX,checkY);
+  rect(rectX,rectY+160,checkX,checkY);
 
   fill(123, 201, 144); //green
-  rect(rectX,rectY+20,20,20);
-  rect(rectX,rectY+60,20,20);
-  rect(rectX,rectY+100,20,20);
-  rect(rectX,rectY+140,20,20);
-  rect(rectX,rectY+180,20,20);
+  rect(rectX,rectY+20,checkX,checkY);
+  rect(rectX,rectY+60,checkX,checkY);
+  rect(rectX,rectY+100,checkX,checkY);
+  rect(rectX,rectY+140,checkX,checkY);
+  rect(rectX,rectY+180,checkX,checkY);
 
   fill(123, 201, 144); //green
-  rect(rectX+20,rectY,20,20);
-  rect(rectX+60,rectY,20,20);
-  rect(rectX+100,rectY,20,20);
-  rect(rectX+140,rectY,20,20);
-  rect(rectX+180,rectY,20,20);
+  rect(rectX+20,rectY,checkX,checkY);
+  rect(rectX+60,rectY,checkX,checkY);
+  rect(rectX+100,rectY,checkX,checkY);
+  rect(rectX+140,rectY,checkX,checkY);
+  rect(rectX+180,rectY,checkX,checkY);
 
   fill(0); //black
-  rect(rectX+40,rectY,20,20);
-  rect(rectX+80,rectY,20,20);
-  rect(rectX+120,rectY,20,20);
-  rect(rectX+160,rectY,20,20);
+  rect(rectX+40,rectY,checkX,checkY);
+  rect(rectX+80,rectY,checkX,checkY);
+  rect(rectX+120,rectY,checkX,checkY);
+  rect(rectX+160,rectY,checkX,checkY);
 
   fill(123, 201, 144); //green
-  rect(rectX+180,rectY+40,20,20);
-  rect(rectX+180,rectY+80,20,20);
-  rect(rectX+180,rectY+120,20,20);
-  rect(rectX+180,rectY+160,20,20);
+  rect(rectX+180,rectY+40,checkX,checkY);
+  rect(rectX+180,rectY+80,checkX,checkY);
+  rect(rectX+180,rectY+120,checkX,checkY);
+  rect(rectX+180,rectY+160,checkX,checkY);
 
   fill(0); //black
-  rect(rectX+180,rectY+20,20,20);
-  rect(rectX+180,rectY+60,20,20);
-  rect(rectX+180,rectY+100,20,20);
-  rect(rectX+180,rectY+140,20,20);
-  rect(rectX+180,rectY+180,20,20);
+  rect(rectX+180,rectY+20,checkX,checkY);
+  rect(rectX+180,rectY+60,checkX,checkY);
+  rect(rectX+180,rectY+100,checkX,checkY);
+  rect(rectX+180,rectY+140,checkX,checkY);
+  rect(rectX+180,rectY+180,checkX,checkY);
 
   fill(0);
-  rect(rectX+20,rectY+180,20,20);
-  rect(rectX+60,rectY+180,20,20);
-  rect(rectX+100,rectY+180,20,20);
-  rect(rectX+140,rectY+180,20,20);
-  rect(rectX+180,rectY+180,20,20);
+  rect(rectX+20,rectY+180,checkX,checkY);
+  rect(rectX+60,rectY+180,checkX,checkY);
+  rect(rectX+100,rectY+180,checkX,checkY);
+  rect(rectX+140,rectY+180,checkX,checkY);
+  rect(rectX+180,rectY+180,checkX,checkY);
 
   fill(123, 201, 144); //green
-  rect(rectX+40,rectY+180,20,20);
-  rect(rectX+80,rectY+180,20,20);
-  rect(rectX+120,rectY+180,20,20);
-  rect(rectX+160,rectY+180,20,20);
+  rect(rectX+40,rectY+180,checkX,checkY);
+  rect(rectX+80,rectY+180,checkX,checkY);
+  rect(rectX+120,rectY+180,checkX,checkY);
+  rect(rectX+160,rectY+180,checkX,checkY);
 
   
 }
