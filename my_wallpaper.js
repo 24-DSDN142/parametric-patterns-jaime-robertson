@@ -40,10 +40,10 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   // wizard hat 
   fill(196, 159, 207); //light purple 
   ellipse(100,80,100,13);
-  triangle(80,80,100,30,120,80)
+  triangle(80,80,100,30,120,80);
 
   fill(133, 109, 140); //darker purple
-  ellipse(100,79,98,4) // darker hat stripe
+  ellipse(100,79,98,4); // darker hat stripe
 
   // frog body
   strokeWeight(0.2);
@@ -60,13 +60,25 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
   ellipse(100,95,headWidth,30); //head
 
-  rect(85,155,10,30) // left leg
-  rect(105,155,10,30) // right leg
+  rect(85,155,10,30); // left leg
+  rect(105,155,10,30); // right leg
   
   fill(0); //black
   ellipse(80,79,eyeSize,eyeSize); // left eye
   ellipse(120,79,eyeSize,eyeSize); // right eye
 
+  arc(100, 97, 20, 10, 0, 180); // mouth
+
+  rotate(-45);
+  
+  fill(133, 109, 140); // dark purple colour
+  rect(-20,188,25,3); // wand base
+  fill(227, 217, 73); // yellow
+  rect(-17,188,5,3); // wand stripe 1
+  rect(-8,188,5,3); // wand stripe 2
+  rect(-0,188,5,3); // wand stripe 3
+
+  rotate(45);
 
 // checkered border
   fill(0); //black
@@ -75,7 +87,6 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   rect(rectX,rectY+80,20,20);
   rect(rectX,rectY+120,20,20);
   rect(rectX,rectY+160,20,20);
-  rect(rectX,rectY+200,20,20);
 
   fill(123, 201, 144); //green
   rect(rectX,rectY+20,20,20);
@@ -109,6 +120,19 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   rect(rectX+180,rectY+100,20,20);
   rect(rectX+180,rectY+140,20,20);
   rect(rectX+180,rectY+180,20,20);
+
+  fill(0);
+  rect(rectX+20,rectY+180,20,20);
+  rect(rectX+60,rectY+180,20,20);
+  rect(rectX+100,rectY+180,20,20);
+  rect(rectX+140,rectY+180,20,20);
+  rect(rectX+180,rectY+180,20,20);
+
+  fill(123, 201, 144); //green
+  rect(rectX+40,rectY+180,20,20);
+  rect(rectX+80,rectY+180,20,20);
+  rect(rectX+120,rectY+180,20,20);
+  rect(rectX+160,rectY+180,20,20);
 
   
 }
