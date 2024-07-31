@@ -1,6 +1,9 @@
 //your parameter variables go here!
 
 let eyeSize = 7; // adjusts eye size
+// connected to my if statment:
+// 7 or greater makes happy face
+// Under 7 makes sad face
 
 let headWidth = 50; // adjusts head width
 
@@ -24,8 +27,8 @@ let colourEye = ("#000000"); // black
 let colourMouth = ("#000000"); // black
 let colourWandBase = ("#856d8c"); // dark purple
 let colourWandStripe = ("#e3d949"); // yellow
-let colourCheck1 = ("#000000"); // black
-let colourCheck2 = ("#7bc990"); // green
+let colourCheckX = ("#000000"); // black
+let colourCheckY = ("#7bc990"); // green
 
 let strokeHat = 0.8; // stroke weight for the hat
 let strokeBody = 0.8; // stroke weight for the body and wand
@@ -109,54 +112,54 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   rotate(45); // rotating everything else back to normal
 
 // checkered border
-  fill(colourCheck1); 
+  fill(colourCheckX); 
   rect(rectX,rectY,checkX,checkY);
   rect(rectX,rectY+40,checkX,checkY);
   rect(rectX,rectY+80,checkX,checkY);
   rect(rectX,rectY+120,checkX,checkY);
   rect(rectX,rectY+160,checkX,checkY);
 
-  fill(colourCheck2); 
+  fill(colourCheckY); 
   rect(rectX,rectY+20,checkX,checkY);
   rect(rectX,rectY+60,checkX,checkY);
   rect(rectX,rectY+100,checkX,checkY);
   rect(rectX,rectY+140,checkX,checkY);
   rect(rectX,rectY+180,checkX,checkY);
 
-  fill(colourCheck2); 
+  fill(colourCheckY); 
   rect(rectX+20,rectY,checkX,checkY);
   rect(rectX+60,rectY,checkX,checkY);
   rect(rectX+100,rectY,checkX,checkY);
   rect(rectX+140,rectY,checkX,checkY);
   rect(rectX+180,rectY,checkX,checkY);
 
-  fill(colourCheck1); 
+  fill(colourCheckX); 
   rect(rectX+40,rectY,checkX,checkY);
   rect(rectX+80,rectY,checkX,checkY);
   rect(rectX+120,rectY,checkX,checkY);
   rect(rectX+160,rectY,checkX,checkY);
 
-  fill(colourCheck2); 
+  fill(colourCheckY); 
   rect(rectX+180,rectY+40,checkX,checkY);
   rect(rectX+180,rectY+80,checkX,checkY);
   rect(rectX+180,rectY+120,checkX,checkY);
   rect(rectX+180,rectY+160,checkX,checkY);
 
-  fill(colourCheck1); 
+  fill(colourCheckX); 
   rect(rectX+180,rectY+20,checkX,checkY);
   rect(rectX+180,rectY+60,checkX,checkY);
   rect(rectX+180,rectY+100,checkX,checkY);
   rect(rectX+180,rectY+140,checkX,checkY);
   rect(rectX+180,rectY+180,checkX,checkY);
 
-  fill(colourCheck1); 
+  fill(colourCheckX); 
   rect(rectX+20,rectY+180,checkX,checkY);
   rect(rectX+60,rectY+180,checkX,checkY);
   rect(rectX+100,rectY+180,checkX,checkY);
   rect(rectX+140,rectY+180,checkX,checkY);
   rect(rectX+180,rectY+180,checkX,checkY);
 
-  fill(colourCheck2); 
+  fill(colourCheckY); 
   rect(rectX+40,rectY+180,checkX,checkY);
   rect(rectX+80,rectY+180,checkX,checkY);
   rect(rectX+120,rectY+180,checkX,checkY);
