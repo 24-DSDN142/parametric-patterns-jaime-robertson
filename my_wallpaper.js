@@ -9,21 +9,11 @@ let eyeDistance = 80; // adjusts eye base distance
 let rectX = 0; // X coord default position
 let rectY = 0; // Y coord default position
 
-let checkX = 20; // adjusts width of check
-let checkY = 20; // adjusts length of check
+let checkX = 15; // adjusts width of check
+let checkY = 15; // adjusts length of check
 
 let legLength = 18; // adjusts length of leg
 
-// Parameters to change colours for each aspect of the design
-let colourHat = (196, 159, 207); // light purple 
-let colourHatStripe = (133, 109, 140); // dark purple
-let colourBody = (123, 201, 144); // green
-let colourEye = (0); //black
-let colourMouth = (0); //black
-let colourWandBase = (133, 109, 140); // dark purple
-let colourWandStripe = (227, 217, 73); // yellow
-let colourCheck1 = (0); //black
-let colourCheck2 = (133, 109, 140); //green
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -44,9 +34,8 @@ function wallpaper_background() {
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-  //rect(40 ,40, rect_width, rect_height);
   
-  strokeWeight(0.2);
+  strokeWeight(0.4);
 
   // wizard hat 
   fill(196, 159, 207); //light purple 
@@ -57,7 +46,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   ellipse(100,79,98,4); // darker hat stripe
 
   // frog body
-  strokeWeight(0.2);
+  strokeWeight(0.4);
   
   fill(123, 201, 144); //green
 
@@ -109,14 +98,14 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   rect(rectX,rectY+120,checkX,checkY);
   rect(rectX,rectY+160,checkX,checkY);
 
-  fill(133, 109, 140); //green
+  fill(226, 222, 227); // very light purple
   rect(rectX,rectY+20,checkX,checkY);
   rect(rectX,rectY+60,checkX,checkY);
   rect(rectX,rectY+100,checkX,checkY);
   rect(rectX,rectY+140,checkX,checkY);
   rect(rectX,rectY+180,checkX,checkY);
 
-  fill(133, 109, 140); //green
+  fill(226, 222, 227); // very light purple
   rect(rectX+20,rectY,checkX,checkY);
   rect(rectX+60,rectY,checkX,checkY);
   rect(rectX+100,rectY,checkX,checkY);
@@ -129,7 +118,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   rect(rectX+120,rectY,checkX,checkY);
   rect(rectX+160,rectY,checkX,checkY);
 
-  fill(133, 109, 140); //green
+  fill(226, 222, 227); // very light purple
   rect(rectX+180,rectY+40,checkX,checkY);
   rect(rectX+180,rectY+80,checkX,checkY);
   rect(rectX+180,rectY+120,checkX,checkY);
@@ -149,7 +138,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   rect(rectX+140,rectY+180,checkX,checkY);
   rect(rectX+180,rectY+180,checkX,checkY);
 
-  fill(133, 109, 140); //green
+  fill(226, 222, 227); // very light purple
   rect(rectX+40,rectY+180,checkX,checkY);
   rect(rectX+80,rectY+180,checkX,checkY);
   rect(rectX+120,rectY+180,checkX,checkY);
