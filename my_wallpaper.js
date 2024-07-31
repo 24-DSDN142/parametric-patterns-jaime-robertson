@@ -4,13 +4,11 @@ let eyeSize = 7; // adjusts eye size
 
 let headWidth = 50; // adjusts head width
 
-let eyeDistance = 80; // adjusts eye base distance
-
 let rectX = 0; // X coord default position
 let rectY = 0; // Y coord default position
 
-let checkX = 15; // adjusts width of check
-let checkY = 15; // adjusts length of check
+let checkX = 20; // adjusts width of check
+let checkY = 20; // adjusts length of check
 
 let legLength = 18; // adjusts length of leg
 let legHeight = 155; // adjusts y postion of leg
@@ -18,6 +16,16 @@ let legHeight = 155; // adjusts y postion of leg
 let bodyLength = 50; // adjusts length of body
 
 let armLength = 45; // adjusts length of arm
+
+let colourHat = ("#c49fcf"); // light purple
+let colourHatStripe = ("#856d8c"); // dark purple
+let colourBody = ("#7bc990"); // green
+let colourEye = ("#000000"); // black
+let colourMouth = ("#000000"); // black
+let colourWandBase = ("#856d8c"); // dark purple
+let colourWandStripe = ("#e3d949"); // yellow
+let colourCheck1 = ("#000000"); // black
+let colourCheck2 = ("#7bc990"); // very light purple
 
 
 
@@ -46,52 +54,52 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   strokeWeight(0.4);
 
   // wizard hat 
-  fill(196, 159, 207); //light purple 
+  fill(colourHat); //light purple 
   ellipse(100,80,100,13);
   triangle(80,80,100,30,120,80);
 
-  fill(133, 109, 140); //darker purple
+  fill(colourHatStripe); //darker purple
   ellipse(100,79,98,4); // darker hat stripe
 
   // frog body
   strokeWeight(0.4);
   
-  fill(123, 201, 144); //green
+  fill(colourBody); //green
 
   rect(77,107,20,armLength,90,90); // left arm
   rect(103,107,20,armLength,90,90); // right arm
 
   rect(85,105,30,bodyLength); // rect body
 
-  ellipse(eyeDistance,80,14,14); // left eye base
-  ellipse(eyeDistance+40,80,14,14); // right eye base
+  ellipse(80,80,14,14); // left eye base
+  ellipse(120,80,14,14); // right eye base
 
   ellipse(100,95,headWidth,30); //head
 
   rect(85,legHeight,10,legLength); // left leg
   rect(105,legHeight,10,legLength); // right leg
   
-  fill(0); //black
+  fill(colourEye); //black
   ellipse(80,79,eyeSize,eyeSize); // left eye
   ellipse(120,79,eyeSize,eyeSize); // right eye
 
   
 
   if(eyeSize < 7){
-  fill(0);
+  fill(colourMouth);
   arc(100, 97, 20, 10, 180, 0); // sad mouth
   
   }
   else{
-  fill(0);
+  fill(colourMouth);
   arc(100, 94, 20, 10, 0, 180); // happy mouth
   }
 
   rotate(-45); //rotation to get wand on angle
   
-  fill(133, 109, 140); // dark purple colour
+  fill(colourWandBase); // dark purple colour
   rect(-20,188,25,3); // wand base
-  fill(227, 217, 73); // yellow
+  fill(colourWandStripe); // yellow
   rect(-17,188,5,3); // wand stripe 1
   rect(-8,188,5,3); // wand stripe 2
   rect(-0,188,5,3); // wand stripe 3
@@ -99,54 +107,54 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   rotate(45); // rotating everything else back to normal
 
 // checkered border
-  fill(0); //black
+  fill(colourCheck1); //black
   rect(rectX,rectY,checkX,checkY);
   rect(rectX,rectY+40,checkX,checkY);
   rect(rectX,rectY+80,checkX,checkY);
   rect(rectX,rectY+120,checkX,checkY);
   rect(rectX,rectY+160,checkX,checkY);
 
-  fill(226, 222, 227); // very light purple
+  fill(colourCheck2); // very light purple
   rect(rectX,rectY+20,checkX,checkY);
   rect(rectX,rectY+60,checkX,checkY);
   rect(rectX,rectY+100,checkX,checkY);
   rect(rectX,rectY+140,checkX,checkY);
   rect(rectX,rectY+180,checkX,checkY);
 
-  fill(226, 222, 227); // very light purple
+  fill(colourCheck2); // very light purple
   rect(rectX+20,rectY,checkX,checkY);
   rect(rectX+60,rectY,checkX,checkY);
   rect(rectX+100,rectY,checkX,checkY);
   rect(rectX+140,rectY,checkX,checkY);
   rect(rectX+180,rectY,checkX,checkY);
 
-  fill(0); //black
+  fill(colourCheck1); //black
   rect(rectX+40,rectY,checkX,checkY);
   rect(rectX+80,rectY,checkX,checkY);
   rect(rectX+120,rectY,checkX,checkY);
   rect(rectX+160,rectY,checkX,checkY);
 
-  fill(226, 222, 227); // very light purple
+  fill(colourCheck2); // very light purple
   rect(rectX+180,rectY+40,checkX,checkY);
   rect(rectX+180,rectY+80,checkX,checkY);
   rect(rectX+180,rectY+120,checkX,checkY);
   rect(rectX+180,rectY+160,checkX,checkY);
 
-  fill(0); //black
+  fill(colourCheck1); //black
   rect(rectX+180,rectY+20,checkX,checkY);
   rect(rectX+180,rectY+60,checkX,checkY);
   rect(rectX+180,rectY+100,checkX,checkY);
   rect(rectX+180,rectY+140,checkX,checkY);
   rect(rectX+180,rectY+180,checkX,checkY);
 
-  fill(0); //black
+  fill(colourCheck1); //black
   rect(rectX+20,rectY+180,checkX,checkY);
   rect(rectX+60,rectY+180,checkX,checkY);
   rect(rectX+100,rectY+180,checkX,checkY);
   rect(rectX+140,rectY+180,checkX,checkY);
   rect(rectX+180,rectY+180,checkX,checkY);
 
-  fill(226, 222, 227); // very light purple
+  fill(colourCheck2); // very light purple
   rect(rectX+40,rectY+180,checkX,checkY);
   rect(rectX+80,rectY+180,checkX,checkY);
   rect(rectX+120,rectY+180,checkX,checkY);
