@@ -1,6 +1,6 @@
 //your parameter variables go here!
 
-let eyeSize = 7; // adjusts eye size
+let eyeSize = 5; // adjusts eye size
 // connected to my if statment:
 // 7 or greater makes happy face
 // Under 7 makes sad face
@@ -10,7 +10,7 @@ let headWidth = 50; // adjusts head width
 let rectX = 0; // X coord default position
 let rectY = 0; // Y coord default position
 
-let checkX = 20; // adjusts width of check
+let checkX = 10; // adjusts width of check
 let checkY = 20; // adjusts length of check
 
 let legLength = 18; // adjusts length of leg
@@ -23,12 +23,14 @@ let armLength = 45; // adjusts length of arm
 let colourHat = ("#c49fcf"); // light purple
 let colourHatStripe = ("#856d8c"); // dark purple
 let colourBody = ("#7bc990"); // green
-let colourEye = ("#000000"); // black
+let colourEye = ("#bf4141"); // red
 let colourMouth = ("#000000"); // black
 let colourWandBase = ("#856d8c"); // dark purple
-let colourWandStripe = ("#e3d949"); // yellow
+let colourWandStripe = ("#bf4141"); // yellow
 let colourCheckX = ("#000000"); // black
-let colourCheckY = ("#c45749"); // red
+let colourCheckY = ("#bf4141"); // red
+
+let backgroundColour = ("#000000"); // dark grey
 
 let strokeHat = 0.8; // stroke weight for the hat
 let strokeBody = 0.8; // stroke weight for the body and wand
@@ -50,7 +52,7 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(47, 47, 47); // dark grey
+  background(backgroundColour); 
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function

@@ -24,12 +24,12 @@ let rectY = 0; // Y coord default position
 let checkX = 20; // adjusts width of check
 let checkY = 20; // adjusts length of check
 
-let legLength = 18; // adjusts length of leg
-let legHeight = 155; // adjusts y postion of leg
+let legLength = 28; // adjusts length of leg
+let legHeight = 145; // adjusts y postion of leg
 
-let bodyLength = 50; // adjusts length of body
+let bodyLength = 40; // adjusts length of body
 
-let armLength = 45; // adjusts length of arm
+let armLength = 40; // adjusts length of arm
 
 let colourHat = ("#c49fcf"); // light purple
 let colourHatStripe = ("#856d8c"); // dark purple
@@ -40,6 +40,8 @@ let colourWandBase = ("#856d8c"); // dark purple
 let colourWandStripe = ("#e3d949"); // yellow
 let colourCheckX = ("#000000"); // black
 let colourCheckY = ("#7bc990"); // green
+
+let backgroundColour = ("#2f2f2f"); // dark grey
 
 let strokeHat = 0.8; // stroke weight for the hat
 let strokeBody = 0.8; // stroke weight for the body and wand
@@ -63,7 +65,7 @@ Wallpaper 2:
 
 //your parameter variables go here!
 
-let eyeSize = 7; // adjusts eye size
+let eyeSize = 5; // adjusts eye size
 // connected to my if statment:
 // 7 or greater makes happy face
 // Under 7 makes sad face
@@ -76,26 +78,27 @@ let rectY = 0; // Y coord default position
 let checkX = 20; // adjusts width of check
 let checkY = 20; // adjusts length of check
 
-let legLength = 25; // adjusts length of leg
-let legHeight = 145; // adjusts y postion of leg
+let legLength = 18; // adjusts length of leg
+let legHeight = 155; // adjusts y postion of leg
 
-let bodyLength = 40; // adjusts length of body
+let bodyLength = 50; // adjusts length of body
 
-let armLength =40; // adjusts length of arm
+let armLength = 45; // adjusts length of arm
 
 let colourHat = ("#c49fcf"); // light purple
 let colourHatStripe = ("#856d8c"); // dark purple
 let colourBody = ("#7bc990"); // green
-let colourEye = ("#c45749"); // red
+let colourEye = ("#bf4141"); // red
 let colourMouth = ("#000000"); // black
 let colourWandBase = ("#856d8c"); // dark purple
 let colourWandStripe = ("#e3d949"); // yellow
 let colourCheckX = ("#000000"); // black
-let colourCheckY = ("#c45749"); // red
+let colourCheckY = ("#bf4141"); // red
+
+let backgroundColour = ("#000000"); // dark grey
 
 let strokeHat = 0.8; // stroke weight for the hat
-let strokeBody = 0.8; // stroke weight for the body and wand
-
+let strokeBody = 0.8; // stroke weight for the body and wan
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
