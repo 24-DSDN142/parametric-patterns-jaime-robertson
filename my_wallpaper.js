@@ -26,9 +26,9 @@ let colourCheck1 = (0); //black
 let colourCheck2 = (133, 109, 140); //green
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
   pWallpaper.resolution(NINE_LANDSCAPE);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
@@ -40,7 +40,7 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(57, 60, 64); // dark grey
+  background(47, 47, 47); // dark grey
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
@@ -81,11 +81,13 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   
 
   if(eyeSize < 7){
+  fill(0);
   arc(100, 97, 20, 10, 180, 0); // sad mouth
   
   }
   else{
-  arc(100, 97, 20, 10, 0, 180); // happy mouth
+  fill(0);
+  arc(100, 94, 20, 10, 0, 180); // happy mouth
   }
 
   rotate(-45); //rotation to get wand on angle
