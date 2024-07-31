@@ -18,8 +18,8 @@ let legLength = 18
 
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.resolution(NINE_LANDSCAPE);
   pWallpaper.show_guide(true); //set this to false when you're ready to print
 
   //Grid settings
@@ -70,9 +70,17 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   ellipse(80,79,eyeSize,eyeSize); // left eye
   ellipse(120,79,eyeSize,eyeSize); // right eye
 
-  arc(100, 97, 20, 10, 0, 180); // mouth
+  
 
-  rotate(-45);
+  if(eyeSize < 7){
+  arc(100, 97, 20, 10, 180, 0); // sad mouth
+  
+  }
+  else{
+  arc(100, 97, 20, 10, 0, 180); // happy mouth
+  }
+
+  rotate(-45); //rotation to get wand on angle
   
   fill(133, 109, 140); // dark purple colour
   rect(-20,188,25,3); // wand base
@@ -81,7 +89,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   rect(-8,188,5,3); // wand stripe 2
   rect(-0,188,5,3); // wand stripe 3
 
-  rotate(45);
+  rotate(45); // rotating everything else back to normal
 
 // checkered border
   fill(0); //black
@@ -91,14 +99,14 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   rect(rectX,rectY+120,checkX,checkY);
   rect(rectX,rectY+160,checkX,checkY);
 
-  fill(123, 201, 144); //green
+  fill(133, 109, 140); //green
   rect(rectX,rectY+20,checkX,checkY);
   rect(rectX,rectY+60,checkX,checkY);
   rect(rectX,rectY+100,checkX,checkY);
   rect(rectX,rectY+140,checkX,checkY);
   rect(rectX,rectY+180,checkX,checkY);
 
-  fill(123, 201, 144); //green
+  fill(133, 109, 140); //green
   rect(rectX+20,rectY,checkX,checkY);
   rect(rectX+60,rectY,checkX,checkY);
   rect(rectX+100,rectY,checkX,checkY);
@@ -111,7 +119,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   rect(rectX+120,rectY,checkX,checkY);
   rect(rectX+160,rectY,checkX,checkY);
 
-  fill(123, 201, 144); //green
+  fill(133, 109, 140); //green
   rect(rectX+180,rectY+40,checkX,checkY);
   rect(rectX+180,rectY+80,checkX,checkY);
   rect(rectX+180,rectY+120,checkX,checkY);
@@ -124,14 +132,14 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   rect(rectX+180,rectY+140,checkX,checkY);
   rect(rectX+180,rectY+180,checkX,checkY);
 
-  fill(0);
+  fill(0); //black
   rect(rectX+20,rectY+180,checkX,checkY);
   rect(rectX+60,rectY+180,checkX,checkY);
   rect(rectX+100,rectY+180,checkX,checkY);
   rect(rectX+140,rectY+180,checkX,checkY);
   rect(rectX+180,rectY+180,checkX,checkY);
 
-  fill(123, 201, 144); //green
+  fill(133, 109, 140); //green
   rect(rectX+40,rectY+180,checkX,checkY);
   rect(rectX+80,rectY+180,checkX,checkY);
   rect(rectX+120,rectY+180,checkX,checkY);
