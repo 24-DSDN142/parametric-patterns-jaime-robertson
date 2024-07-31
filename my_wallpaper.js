@@ -1,6 +1,6 @@
 //your parameter variables go here!
 
-let eyeSize = 7; // adjusts eye size
+let eyeSize = 5; // adjusts eye size
 // connected to my if statment:
 // 7 or greater makes happy face
 // Under 7 makes sad face
@@ -10,8 +10,8 @@ let headWidth = 45; // adjusts head width
 let rectX = 0; // X coord default position
 let rectY = 0; // Y coord default position
 
-let checkX = 10; // adjusts width of check
-let checkY = 10; // adjusts length of check
+let checkX = 30; // adjusts width of check
+let checkY = 20; // adjusts length of check
 
 let legLength = 18; // adjusts length of leg
 let legHeight = 145; // adjusts y postion of leg
@@ -28,7 +28,7 @@ let colourMouth = ("#000000"); // black
 let colourWandBase = ("#856d8c"); // dark purple
 let colourWandStripe = ("#e3d949"); // yellow
 let colourCheckX = ("#000000"); // black
-let colourCheckY = ("#a5d9ae"); // light green
+let colourCheckY = ("#e6f0e8"); // light green
 
 let backgroundColour = ("#2f2f2f"); // dark grey
 
