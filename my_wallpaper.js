@@ -13,6 +13,14 @@ let checkX = 15; // adjusts width of check
 let checkY = 15; // adjusts length of check
 
 let legLength = 18; // adjusts length of leg
+let legHeight = 155; // adjusts y postion of leg
+
+let bodyLength = 50; // adjusts length of body
+
+let armLength = 45; // adjusts length of arm
+
+
+
 
 
 function setup_wallpaper(pWallpaper) {
@@ -50,18 +58,18 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   
   fill(123, 201, 144); //green
 
-  rect(77,107,20,45,90,90); // left arm
-  rect(103,107,20,45,90,90); // right arm
+  rect(77,107,20,armLength,90,90); // left arm
+  rect(103,107,20,armLength,90,90); // right arm
 
-  rect(85,105,30,50); // rect body
+  rect(85,105,30,bodyLength); // rect body
 
   ellipse(eyeDistance,80,14,14); // left eye base
   ellipse(eyeDistance+40,80,14,14); // right eye base
 
   ellipse(100,95,headWidth,30); //head
 
-  rect(85,155,10,legLength); // left leg
-  rect(105,155,10,legLength); // right leg
+  rect(85,legHeight,10,legLength); // left leg
+  rect(105,legHeight,10,legLength); // right leg
   
   fill(0); //black
   ellipse(80,79,eyeSize,eyeSize); // left eye
