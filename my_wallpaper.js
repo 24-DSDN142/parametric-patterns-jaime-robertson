@@ -1,39 +1,39 @@
 //your parameter variables go here!
 
-let eyeSize = 5; // adjusts eye size
+let eyeSize = 7; // adjusts eye size
 // connected to my if statment:
 // 7 or greater makes happy face
 // Under 7 makes sad face
 
-let headWidth = 50; // adjusts head width
+let headWidth = 45; // adjusts head width
 
 let rectX = 0; // X coord default position
 let rectY = 0; // Y coord default position
 
 let checkX = 10; // adjusts width of check
-let checkY = 20; // adjusts length of check
+let checkY = 10; // adjusts length of check
 
 let legLength = 18; // adjusts length of leg
-let legHeight = 155; // adjusts y postion of leg
+let legHeight = 145; // adjusts y postion of leg
 
-let bodyLength = 50; // adjusts length of body
+let bodyLength = 40; // adjusts length of body
 
-let armLength = 45; // adjusts length of arm
+let armLength = 42; // adjusts length of arm
 
 let colourHat = ("#c49fcf"); // light purple
 let colourHatStripe = ("#856d8c"); // dark purple
 let colourBody = ("#7bc990"); // green
-let colourEye = ("#bf4141"); // red
+let colourEye = ("#000000"); // black
 let colourMouth = ("#000000"); // black
 let colourWandBase = ("#856d8c"); // dark purple
-let colourWandStripe = ("#bf4141"); // yellow
+let colourWandStripe = ("#e3d949"); // yellow
 let colourCheckX = ("#000000"); // black
-let colourCheckY = ("#bf4141"); // red
+let colourCheckY = ("#a5d9ae"); // light green
 
-let backgroundColour = ("#000000"); // dark grey
+let backgroundColour = ("#2f2f2f"); // dark grey
 
-let strokeHat = 0.8; // stroke weight for the hat
-let strokeBody = 0.8; // stroke weight for the body and wand
+let strokeHat = 0.4; // stroke weight for the hat
+let strokeBody = 0.4; // stroke weight for the body and wand
 
 
 
@@ -46,10 +46,9 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.grid_settings.cell_width  = 200;
   pWallpaper.grid_settings.cell_height = 200;
   pWallpaper.grid_settings.row_offset  = 0;
-
-  angleMode(DEGREES);
-
 }
+
+angleMode(DEGREES);
 
 function wallpaper_background() {
   background(backgroundColour); 
