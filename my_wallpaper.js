@@ -1,21 +1,29 @@
 //your parameter variables go here!
-//let rect_width  = 20;
-//let rect_height = 20;
 
-let eyeSize = 7
+let eyeSize = 7; // adjusts eye size
 
-let headWidth = 50
+let headWidth = 50; // adjusts head width
 
-let eyeDistance = 80
+let eyeDistance = 80; // adjusts eye base distance
 
-let rectX = 0
-let rectY = 0
+let rectX = 0; // X coord default position
+let rectY = 0; // Y coord default position
 
-let checkX = 20
-let checkY = 20
+let checkX = 20; // adjusts width of check
+let checkY = 20; // adjusts length of check
 
-let legLength = 18
+let legLength = 18; // adjusts length of leg
 
+// Parameters to change colours for each aspect of the design
+let colourHat = (196, 159, 207); // light purple 
+let colourHatStripe = (133, 109, 140); // dark purple
+let colourBody = (123, 201, 144); // green
+let colourEye = (0); //black
+let colourMouth = (0); //black
+let colourWandBase = (133, 109, 140); // dark purple
+let colourWandStripe = (227, 217, 73); // yellow
+let colourCheck1 = (0); //black
+let colourCheck2 = (133, 109, 140); //green
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
