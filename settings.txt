@@ -12,6 +12,9 @@ Wallpaper 1:
 //your parameter variables go here!
 
 let eyeSize = 7; // adjusts eye size
+// connected to my if statment:
+// 7 or greater makes happy face
+// Under 7 makes sad face
 
 let headWidth = 50; // adjusts head width
 
@@ -35,8 +38,13 @@ let colourEye = ("#000000"); // black
 let colourMouth = ("#000000"); // black
 let colourWandBase = ("#856d8c"); // dark purple
 let colourWandStripe = ("#e3d949"); // yellow
-let colourCheck1 = ("#000000"); // black
-let colourCheck2 = ("#7bc990"); // very light purple
+let colourCheckX = ("#000000"); // black
+let colourCheckY = ("#7bc990"); // green
+
+let strokeHat = 0.8; // stroke weight for the hat
+let strokeBody = 0.8; // stroke weight for the body and wand
+
+
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -54,13 +62,40 @@ function setup_wallpaper(pWallpaper) {
 Wallpaper 2:
 
 //your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+
+let eyeSize = 7; // adjusts eye size
+// connected to my if statment:
+// 7 or greater makes happy face
+// Under 7 makes sad face
+
+let headWidth = 50; // adjusts head width
+
+let rectX = 0; // X coord default position
+let rectY = 0; // Y coord default position
+
+let checkX = 20; // adjusts width of check
+let checkY = 20; // adjusts length of check
+
+let legLength = 25; // adjusts length of leg
+let legHeight = 145; // adjusts y postion of leg
+
+let bodyLength = 40; // adjusts length of body
+
+let armLength =40; // adjusts length of arm
+
+let colourHat = ("#c49fcf"); // light purple
+let colourHatStripe = ("#856d8c"); // dark purple
+let colourBody = ("#7bc990"); // green
+let colourEye = ("#c45749"); // red
+let colourMouth = ("#000000"); // black
+let colourWandBase = ("#856d8c"); // dark purple
+let colourWandStripe = ("#e3d949"); // yellow
+let colourCheckX = ("#000000"); // black
+let colourCheckY = ("#c45749"); // red
+
+let strokeHat = 0.8; // stroke weight for the hat
+let strokeBody = 0.8; // stroke weight for the body and wand
+
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);

@@ -28,7 +28,7 @@ let colourMouth = ("#000000"); // black
 let colourWandBase = ("#856d8c"); // dark purple
 let colourWandStripe = ("#e3d949"); // yellow
 let colourCheckX = ("#000000"); // black
-let colourCheckY = ("#7bc990"); // green
+let colourCheckY = ("#c45749"); // red
 
 let strokeHat = 0.8; // stroke weight for the hat
 let strokeBody = 0.8; // stroke weight for the body and wand
