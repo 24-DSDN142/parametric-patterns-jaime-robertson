@@ -1,22 +1,22 @@
 //your parameter variables go here!
 
-let eyeSize = 5; // adjusts eye size
+let eyeSize = 7; // adjusts eye size
 // connected to my if statment:
 // 7 or greater makes happy face
 // Under 7 makes sad face
 
-let headWidth = 45; // adjusts head width
+let headWidth = 50; // adjusts head width
 
-let rectX = 0; // X coord default position
+let rectX = -5; // X coord default position
 let rectY = 0; // Y coord default position
 
 let checkX = 30; // adjusts width of check
 let checkY = 20; // adjusts length of check
 
-let legLength = 18; // adjusts length of leg
-let legHeight = 145; // adjusts y postion of leg
+let legLength = 22; // adjusts length of leg
+let legHeight = 150; // adjusts y postion of leg
 
-let bodyLength = 40; // adjusts length of body
+let bodyLength = 45; // adjusts length of body
 
 let armLength = 42; // adjusts length of arm
 
@@ -28,9 +28,9 @@ let colourMouth = ("#000000"); // black
 let colourWandBase = ("#856d8c"); // dark purple
 let colourWandStripe = ("#e3d949"); // yellow
 let colourCheckX = ("#000000"); // black
-let colourCheckY = ("#e6f0e8"); // light green
+let colourCheckY = ("#ddf0e0"); // off white
 
-let backgroundColour = ("#2f2f2f"); // dark grey
+let backgroundColour = ("#2f2f2f"); // black
 
 let strokeHat = 0.4; // stroke weight for the hat
 let strokeBody = 0.4; // stroke weight for the body and wand
@@ -89,7 +89,6 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   ellipse(120,79,eyeSize,eyeSize); // right eye
 
   
-
   if(eyeSize < 7){
   fill(colourMouth);
   arc(100, 97, 20, 10, 180, 0); // sad mouth
