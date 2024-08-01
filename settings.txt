@@ -10,13 +10,43 @@ Your final settings.txt will look something like this when you are finished:
 Wallpaper 1:
 
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+
+let eyeSize = 7; // adjusts eye size
+// connected to my if statment:
+// 7 or greater makes happy face
+// Under 7 makes sad face
+
+let headWidth = 50; // adjusts head width
+
+let rectX = 0; // X coord default position
+let rectY = 0; // Y coord default position
+
+let checkX = 20; // adjusts width of check
+let checkY = 20; // adjusts length of check
+
+let legLength = 28; // adjusts length of leg
+let legHeight = 145; // adjusts y postion of leg
+
+let bodyLength = 40; // adjusts length of body
+
+let armLength = 40; // adjusts length of arm
+
+let colourHat = ("#c49fcf"); // light purple
+let colourHatStripe = ("#856d8c"); // dark purple
+let colourBody = ("#7bc990"); // green
+let colourEye = ("#000000"); // black
+let colourMouth = ("#000000"); // black
+let colourWandBase = ("#856d8c"); // dark purple
+let colourWandStripe = ("#e3d949"); // yellow
+let colourCheckX = ("#000000"); // black
+let colourCheckY = ("#7bc990"); // green
+
+let backgroundColour = ("#2f2f2f"); // dark grey
+
+let strokeHat = 0.8; // stroke weight for the hat
+let strokeBody = 0.8; // stroke weight for the body and wand
+
+
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -34,13 +64,41 @@ function setup_wallpaper(pWallpaper) {
 Wallpaper 2:
 
 //your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+
+let eyeSize = 5; // adjusts eye size
+// connected to my if statment:
+// 7 or greater makes happy face
+// Under 7 makes sad face
+
+let headWidth = 50; // adjusts head width
+
+let rectX = 0; // X coord default position
+let rectY = 0; // Y coord default position
+
+let checkX = 20; // adjusts width of check
+let checkY = 20; // adjusts length of check
+
+let legLength = 18; // adjusts length of leg
+let legHeight = 155; // adjusts y postion of leg
+
+let bodyLength = 50; // adjusts length of body
+
+let armLength = 45; // adjusts length of arm
+
+let colourHat = ("#c49fcf"); // light purple
+let colourHatStripe = ("#856d8c"); // dark purple
+let colourBody = ("#7bc990"); // green
+let colourEye = ("#bf4141"); // red
+let colourMouth = ("#000000"); // black
+let colourWandBase = ("#856d8c"); // dark purple
+let colourWandStripe = ("#e3d949"); // yellow
+let colourCheckX = ("#000000"); // black
+let colourCheckY = ("#bf4141"); // red
+
+let backgroundColour = ("#000000"); // black
+
+let strokeHat = 0.8; // stroke weight for the hat
+let strokeBody = 0.8; // stroke weight for the body and wan
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
@@ -52,3 +110,415 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.grid_settings.cell_height = 100;
   pWallpaper.grid_settings.row_offset  = 0;
 }
+
+//////////////////////////////////////////////
+
+Wallpaper 3:
+
+let eyeSize = 5; // adjusts eye size
+// connected to my if statment:
+// 7 or greater makes happy face
+// Under 7 makes sad face
+
+let headWidth = 45; // adjusts head width
+
+let rectX = 0; // X coord default position
+let rectY = 0; // Y coord default position
+
+let checkX = 10; // adjusts width of check
+let checkY = 20; // adjusts length of check
+
+let legLength = 18; // adjusts length of leg
+let legHeight = 155; // adjusts y postion of leg
+
+let bodyLength = 50; // adjusts length of body
+
+let armLength = 45; // adjusts length of arm
+
+let colourHat = ("#c49fcf"); // light purple
+let colourHatStripe = ("#856d8c"); // dark purple
+let colourBody = ("#7bc990"); // green
+let colourEye = ("#bf4141"); // red
+let colourMouth = ("#000000"); // black
+let colourWandBase = ("#856d8c"); // dark purple
+let colourWandStripe = ("#bf4141"); // yellow
+let colourCheckX = ("#000000"); // black
+let colourCheckY = ("#bf4141"); // red
+
+let backgroundColour = ("#000000"); // black
+
+let strokeHat = 0.8; // stroke weight for the hat
+let strokeBody = 0.8; // stroke weight for the body and wand
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 100;
+  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+////////////////////////////////////////
+
+Wallpaper 4:
+
+let eyeSize = 7; // adjusts eye size
+// connected to my if statment:
+// 7 or greater makes happy face
+// Under 7 makes sad face
+
+let headWidth = 50; // adjusts head width
+
+let rectX = 0; // X coord default position
+let rectY = 0; // Y coord default position
+
+let checkX = 20; // adjusts width of check
+let checkY = 20; // adjusts length of check
+
+let legLength = 18; // adjusts length of leg
+let legHeight = 155; // adjusts y postion of leg
+
+let bodyLength = 50; // adjusts length of body
+
+let armLength = 45; // adjusts length of arm
+
+let colourHat = ("#c49fcf"); // light purple
+let colourHatStripe = ("#856d8c"); // dark purple
+let colourBody = ("#7bc990"); // green
+let colourEye = ("#000000"); // black
+let colourMouth = ("#000000"); // black
+let colourWandBase = ("#856d8c"); // dark purple
+let colourWandStripe = ("#e3d949"); // yellow
+let colourCheckX = ("#000000"); // black
+let colourCheckY = ("#856d8c"); // dark purple
+
+let backgroundColour = ("#2f2f2f"); // dark grey
+
+let strokeHat = 0.4; // stroke weight for the hat
+let strokeBody = 0.4; // stroke weight for the body and wand
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GLIDE_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+////////////////////////////////////////////////
+
+Wallpaper 5:
+
+let eyeSize = 7; // adjusts eye size
+// connected to my if statment:
+// 7 or greater makes happy face
+// Under 7 makes sad face
+
+let headWidth = 45; // adjusts head width
+
+let rectX = 0; // X coord default position
+let rectY = 0; // Y coord default position
+
+let checkX = 10; // adjusts width of check
+let checkY = 10; // adjusts length of check
+
+let legLength = 18; // adjusts length of leg
+let legHeight = 145; // adjusts y postion of leg
+
+let bodyLength = 40; // adjusts length of body
+
+let armLength = 42; // adjusts length of arm
+
+let colourHat = ("#c49fcf"); // light purple
+let colourHatStripe = ("#856d8c"); // dark purple
+let colourBody = ("#7bc990"); // green
+let colourEye = ("#000000"); // black
+let colourMouth = ("#000000"); // black
+let colourWandBase = ("#856d8c"); // dark purple
+let colourWandStripe = ("#e3d949"); // yellow
+let colourCheckX = ("#000000"); // black
+let colourCheckY = ("#a5d9ae"); // light green
+
+let backgroundColour = ("#2f2f2f"); // dark grey
+
+let strokeHat = 0.4; // stroke weight for the hat
+let strokeBody = 0.4; // stroke weight for the body and wand
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 100;
+  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+////////////////////////////////////////////
+
+Wallpaper 6:
+
+let eyeSize = 7; // adjusts eye size
+// connected to my if statment:
+// 7 or greater makes happy face
+// Under 7 makes sad face
+
+let headWidth = 45; // adjusts head width
+
+let rectX = -5; // X coord default position
+let rectY = 0; // Y coord default position
+
+let checkX = 30; // adjusts width of check
+let checkY = 20; // adjusts length of check
+
+let legLength = 22; // adjusts length of leg
+let legHeight = 150; // adjusts y postion of leg
+
+let bodyLength = 45; // adjusts length of body
+
+let armLength = 42; // adjusts length of arm
+
+let colourHat = ("#c49fcf"); // light purple
+let colourHatStripe = ("#856d8c"); // dark purple
+let colourBody = ("#7bc990"); // green
+let colourEye = ("#000000"); // black
+let colourMouth = ("#000000"); // black
+let colourWandBase = ("#856d8c"); // dark purple
+let colourWandStripe = ("#e3d949"); // yellow
+let colourCheckX = ("#000000"); // black
+let colourCheckY = ("#ddf0e0"); // off white
+
+let backgroundColour = ("#2f2f2f"); // dark grey
+
+let strokeHat = 0.4; // stroke weight for the hat
+let strokeBody = 0.4; // stroke weight for the body and wand
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+////////////////////////////////////////////
+
+Wallpaper 7:
+
+let eyeSize = 6; // adjusts eye size
+// connected to my if statment:
+// 7 or greater makes happy face
+// Under 7 makes sad face
+
+let headWidth = 50; // adjusts head width
+
+let rectX = 4; // X coord default position
+let rectY = 0; // Y coord default position
+
+let checkX = 15; // adjusts width of check
+let checkY = 20; // adjusts length of check
+
+let legLength = 22; // adjusts length of leg
+let legHeight = 150; // adjusts y postion of leg
+
+let bodyLength = 45; // adjusts length of body
+
+let armLength = 42; // adjusts length of arm
+
+let colourHat = ("#c49fcf"); // light purple
+let colourHatStripe = ("#856d8c"); // dark purple
+let colourBody = ("#7bc990"); // green
+let colourEye = ("#000000"); // black
+let colourMouth = ("#000000"); // black
+let colourWandBase = ("#856d8c"); // dark purple
+let colourWandStripe = ("#e3d949"); // yellow
+let colourCheckX = ("#000000"); // black
+let colourCheckY = ("#856d8c"); // purple
+
+let backgroundColour = ("#2f2f2f"); // dark grey
+
+let strokeHat = 0.6; // stroke weight for the hat
+let strokeBody = 0.6; // stroke weight for the body and wand
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+//////////////////////////////////////////////
+
+Wallpaper 8:
+
+let eyeSize = 8; // adjusts eye size
+// connected to my if statment:
+// 7 or greater makes happy face
+// Under 7 makes sad face
+
+let headWidth = 50; // adjusts head width
+
+let rectX = 4; // X coord default position
+let rectY = 0; // Y coord default position
+
+let checkX = 20; // adjusts width of check
+let checkY = 10; // adjusts length of check
+
+let legLength = 22; // adjusts length of leg
+let legHeight = 145; // adjusts y postion of leg
+
+let bodyLength = 40; // adjusts length of body
+
+let armLength = 42; // adjusts length of arm
+
+let colourHat = ("#c49fcf"); // light purple
+let colourHatStripe = ("#856d8c"); // dark purple
+let colourBody = ("#7bc990"); // green
+let colourEye = ("#000000"); // black
+let colourMouth = ("#000000"); // black
+let colourWandBase = ("#856d8c"); // dark purple
+let colourWandStripe = ("#e3d949"); // yellow
+let colourCheckX = ("#000000"); // black
+let colourCheckY = ("#ddf0e0"); // off white
+
+let backgroundColour = ("#000000"); // black
+
+let strokeHat = 0.2; // stroke weight for the hat
+let strokeBody = 0.2; // stroke weight for the body and wand
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+/////////////////////////////////////////////////
+
+Wallpaper 9:
+
+let eyeSize = 8; // adjusts eye size
+// connected to my if statment:
+// 7 or greater makes happy face
+// Under 7 makes sad face
+
+let headWidth = 50; // adjusts head width
+
+let rectX = 4; // X coord default position
+let rectY = 0; // Y coord default position
+
+let checkX = 15; // adjusts width of check
+let checkY = 15; // adjusts length of check
+
+let legLength = 22; // adjusts length of leg
+let legHeight = 145; // adjusts y postion of leg
+
+let bodyLength = 40; // adjusts length of body
+
+let armLength = 42; // adjusts length of arm
+
+let colourHat = ("#c49fcf"); // light purple
+let colourHatStripe = ("#856d8c"); // dark purple
+let colourBody = ("#7bc990"); // green
+let colourEye = ("#000000"); // black
+let colourMouth = ("#000000"); // black
+let colourWandBase = ("#856d8c"); // dark purple
+let colourWandStripe = ("#e3d949"); // yellow
+let colourCheckX = ("#000000"); // black
+let colourCheckY = ("#ddf0e0"); // off white
+
+let backgroundColour = ("#2f2f2f"); // dark grey
+
+let strokeHat = 0.4; // stroke weight for the hat
+let strokeBody = 0.4; // stroke weight for the body and wand
+
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 35;
+}
+
+/////////////////////////////////////////////////////////
+
+Final Wallpaper: A3
+
+let eyeSize = 7; // adjusts eye size
+// connected to my if statment:
+// 7 or greater makes happy face
+// Under 7 makes sad face
+
+let headWidth = 50; // adjusts head width
+
+let rectX = -5; // X coord default position
+let rectY = 0; // Y coord default position
+
+let checkX = 30; // adjusts width of check
+let checkY = 20; // adjusts length of check
+
+let legLength = 22; // adjusts length of leg
+let legHeight = 150; // adjusts y postion of leg
+
+let bodyLength = 45; // adjusts length of body
+
+let armLength = 42; // adjusts length of arm
+
+let colourHat = ("#c49fcf"); // light purple
+let colourHatStripe = ("#856d8c"); // dark purple
+let colourBody = ("#7bc990"); // green
+let colourEye = ("#000000"); // black
+let colourMouth = ("#000000"); // black
+let colourWandBase = ("#856d8c"); // dark purple
+let colourWandStripe = ("#e3d949"); // yellow
+let colourCheckX = ("#000000"); // black
+let colourCheckY = ("#ddf0e0"); // off white
+
+let backgroundColour = ("#2f2f2f"); // dark grey
+
+let strokeHat = 0.4; // stroke weight for the hat
+let strokeBody = 0.4; // stroke weight for the body and wand
+
+
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(A3);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+/////////////////////////////////////////////////
