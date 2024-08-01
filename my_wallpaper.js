@@ -7,8 +7,8 @@ let eyeSize = 7; // adjusts eye size
 
 let headWidth = 50; // adjusts head width
 
-let rectX = -5; // X coord default position
-let rectY = 0; // Y coord default position
+let rectX = -5; // X coord position for my checkered border
+let rectY = 0; // Y coord position for my checkered border
 
 let checkX = 30; // adjusts width of check
 let checkY = 20; // adjusts length of check
@@ -30,7 +30,7 @@ let colourWandStripe = ("#e3d949"); // yellow
 let colourCheckX = ("#000000"); // black
 let colourCheckY = ("#ddf0e0"); // off white
 
-let backgroundColour = ("#2f2f2f"); // black
+let backgroundColour = ("#2f2f2f"); // dark grey
 
 let strokeHat = 0.4; // stroke weight for the hat
 let strokeBody = 0.4; // stroke weight for the body and wand
@@ -56,20 +56,20 @@ function wallpaper_background() {
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
   
-  strokeWeight(strokeHat);
+  strokeWeight(strokeHat); // stroke weight for the hat
 
-  // wizard hat 
-  fill(colourHat); //light purple 
-  ellipse(100,80,100,13);
-  triangle(80,80,100,30,120,80);
+  // wizard hat variables
+  fill(colourHat); 
+  ellipse(100,80,100,13); // hat brim
+  triangle(80,80,100,30,120,80); // point
 
-  fill(colourHatStripe); //darker purple
+  fill(colourHatStripe); 
   ellipse(100,79,98,4); // darker hat stripe
 
-  // frog body
-  strokeWeight(strokeBody);
+  // frog body 
+  strokeWeight(strokeBody); // stroke weight for the body and wand
   
-  fill(colourBody); //green
+  fill(colourBody); 
 
   rect(77,107,20,armLength,90,90); // left arm
   rect(103,107,20,armLength,90,90); // right arm
@@ -84,11 +84,11 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   rect(85,legHeight,10,legLength); // left leg
   rect(105,legHeight,10,legLength); // right leg
   
-  fill(colourEye); //black
+  fill(colourEye); 
   ellipse(80,79,eyeSize,eyeSize); // left eye
   ellipse(120,79,eyeSize,eyeSize); // right eye
 
-  
+  // if statement that changes the style of mouth depending on eye size
   if(eyeSize < 7){
   fill(colourMouth);
   arc(100, 97, 20, 10, 180, 0); // sad mouth
@@ -99,7 +99,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   arc(100, 94, 20, 10, 0, 180); // happy mouth
   }
 
-  rotate(-45); //rotation to get wand on angle
+  rotate(-45); // rotation to get wand on angle
   
 
   fill(colourWandBase); 

@@ -451,7 +451,7 @@ let colourWandStripe = ("#e3d949"); // yellow
 let colourCheckX = ("#000000"); // black
 let colourCheckY = ("#ddf0e0"); // off white
 
-let backgroundColour = ("#2f2f2f"); // black
+let backgroundColour = ("#2f2f2f"); // dark grey
 
 let strokeHat = 0.4; // stroke weight for the hat
 let strokeBody = 0.4; // stroke weight for the body and wand
@@ -503,7 +503,7 @@ let colourWandStripe = ("#e3d949"); // yellow
 let colourCheckX = ("#000000"); // black
 let colourCheckY = ("#ddf0e0"); // off white
 
-let backgroundColour = ("#2f2f2f"); // black
+let backgroundColour = ("#2f2f2f"); // dark grey
 
 let strokeHat = 0.4; // stroke weight for the hat
 let strokeBody = 0.4; // stroke weight for the body and wand
